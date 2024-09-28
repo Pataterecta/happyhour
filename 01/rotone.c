@@ -52,7 +52,7 @@ int main(int ac, char **argv)
         {
             argv[1][i] = 'A';
         }
-        else if (argv[1][i] >= 'a' && argv[1][i] <= 'y' || argv[1][i] >= 'A' && argv[1][i] <= 'Y')
+        else if ((argv[1][i] >= 'a' && argv[1][i] <= 'y') || (argv[1][i] >= 'A' && argv[1][i] <= 'Y'))
         {
             argv[1][i] = argv[1][i] + 1;
         }
@@ -60,4 +60,5 @@ int main(int ac, char **argv)
         i++;
     }
     write(1, "\n", 1);
+    return (0);
 }
