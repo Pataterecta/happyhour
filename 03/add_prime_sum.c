@@ -77,7 +77,7 @@ int main(int ac, char **argv)
         
         while (nbr > 0)
         {
-            if (is_prime(nbr))
+            if (is_prime(nbr)) // 함수가 1을 반환 할 때 내부 코드 실행
                 sum += nbr;
             nbr--;
         }
